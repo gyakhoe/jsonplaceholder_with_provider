@@ -14,7 +14,7 @@ class UserRepo {
   Future<User> fetchUserDetail({int userId}) async {
     var jsonResponse = await CommonRepo.makeHttpRequest(
         url: Strings.usersApiUrl, appendUrl: userId);
-    User user = jsonResponse.map((responseMap) => User.fromMap(responseMap));
+    User user = User.fromMap(jsonResponse);
     return user;
   }
 }
