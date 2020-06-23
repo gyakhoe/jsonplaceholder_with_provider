@@ -2,7 +2,6 @@ import 'package:jsonplaceholder_with_provider/common/strings.dart';
 import 'package:jsonplaceholder_with_provider/data/models/album.dart';
 import 'package:jsonplaceholder_with_provider/data/models/photo.dart';
 import 'package:jsonplaceholder_with_provider/data/models/screen/album_screen_model.dart';
-import 'package:jsonplaceholder_with_provider/data/models/screen/post_screen_model.dart';
 import 'package:jsonplaceholder_with_provider/data/models/user.dart';
 import 'package:jsonplaceholder_with_provider/data/repositories/album_repo.dart';
 import 'package:jsonplaceholder_with_provider/data/repositories/photo_repo.dart';

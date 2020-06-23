@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jsonplaceholder_with_provider/provider/album_screen_provider.dart';
 import 'package:jsonplaceholder_with_provider/provider/post_screen_provider.dart';
+import 'package:jsonplaceholder_with_provider/provider/user_screen_provider.dart';
 import 'package:jsonplaceholder_with_provider/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
         ),
         FutureProvider(
           create: (context) => AlbumScreenProvider().fetchAllAlbumDetails(),
+        ),
+        FutureProvider(
+          create: (context) => UserScreenProvider().fetchAllUserDetails(),
         ),
       ], child: HomeScreen()),
     );
