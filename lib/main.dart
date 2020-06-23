@@ -21,6 +21,9 @@ class MyApp extends StatelessWidget {
         Provider(
           create: (context) => PostScreenProvider(),
         ),
+        FutureProvider(
+          create: (context) => PostScreenProvider().fetchPostScreenDetails(),
+        ),
       ], child: HomeScreen()),
     );
   }
