@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jsonplaceholder_with_provider/screens/album_page.dart';
 import 'package:jsonplaceholder_with_provider/screens/post_page.dart';
+import 'package:jsonplaceholder_with_provider/screens/user_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -13,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var pages = [
     PostPage(),
     AlbumPage(),
-    Text('User'),
+    UserPage(),
   ];
   var pageIndex = 0;
   @override
