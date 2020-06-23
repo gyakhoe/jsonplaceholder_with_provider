@@ -1,5 +1,7 @@
+import 'package:jsonplaceholder_with_provider/common/strings.dart';
 import 'package:jsonplaceholder_with_provider/data/models/post.dart';
-import 'package:jsonplaceholder_with_provider/data/models/post_screen_model.dart';
+import 'package:jsonplaceholder_with_provider/data/models/screen/post_screen_model.dart';
+
 import 'package:jsonplaceholder_with_provider/data/models/user.dart';
 import 'package:jsonplaceholder_with_provider/data/repositories/post_repo.dart';
 import 'package:jsonplaceholder_with_provider/data/repositories/user_repo.dart';
@@ -16,8 +18,7 @@ class PostScreenProvider {
           post: post,
           name: user.name,
           username: user.username,
-          photoUrl:
-              'https://unsplash.com/photos/N2IJ31xZ_ks/download?force=true&w=640');
+          photoUrl: Strings.userProfileImages.elementAt(post.userId - 1));
       postScreenModels.add(postScreenModel);
     }
     return postScreenModels;

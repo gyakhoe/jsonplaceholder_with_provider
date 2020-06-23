@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jsonplaceholder_with_provider/screens/album_page.dart';
 import 'package:jsonplaceholder_with_provider/screens/post_page.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   var pages = [
     PostPage(),
-    Text('Album'),
+    AlbumPage(),
     Text('User'),
   ];
   var pageIndex = 0;

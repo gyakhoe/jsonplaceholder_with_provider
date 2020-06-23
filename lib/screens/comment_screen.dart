@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jsonplaceholder_with_provider/data/models/comment.dart';
-import 'package:jsonplaceholder_with_provider/data/models/post_screen_model.dart';
+import 'package:jsonplaceholder_with_provider/data/models/screen/post_screen_model.dart';
 import 'package:jsonplaceholder_with_provider/screens/widgets/comment_widget.dart';
 import 'package:jsonplaceholder_with_provider/screens/widgets/post_widget.dart';
 import 'package:provider/provider.dart';
