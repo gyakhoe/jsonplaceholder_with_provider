@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jsonplaceholder_with_provider/data/models/post_screen_model.dart';
+import 'package:jsonplaceholder_with_provider/data/models/screen/post_screen_model.dart';
 import 'package:jsonplaceholder_with_provider/provider/comment_screen_provider.dart';
 import 'package:jsonplaceholder_with_provider/screens/comment_screen.dart';
 import 'package:provider/provider.dart';

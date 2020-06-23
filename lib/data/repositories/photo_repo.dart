@@ -23,4 +23,10 @@ class PhotoRepo {
     Photo photo = Photo.fromJson(jsonResponse);
     return photo;
   }
+
+  Future<Photo> fetchPhotoWithCustomUrl({String url}) async {
+    var jsonResponse = await CommonRepo.makeHttpRequest(url: url);
+    Photo photo = Photo.fromMap(jsonResponse);
+    return photo;
+  }
 }

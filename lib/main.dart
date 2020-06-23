@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jsonplaceholder_with_provider/provider/album_screen_provider.dart';
 import 'package:jsonplaceholder_with_provider/provider/post_screen_provider.dart';
 import 'package:jsonplaceholder_with_provider/screens/home_screen.dart';
 import 'package:provider/provider.dart';
@@ -18,11 +19,11 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MultiProvider(providers: [
-        Provider(
-          create: (context) => PostScreenProvider(),
-        ),
         FutureProvider(
           create: (context) => PostScreenProvider().fetchPostScreenDetails(),
+        ),
+        FutureProvider(
+          create: (context) => AlbumScreenProvider().fetchAllAlbumDetails(),
         ),
       ], child: HomeScreen()),
     );
