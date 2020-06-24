@@ -61,18 +61,17 @@ class AlbumWidget extends StatelessWidget {
                           TextSpan(
                             text: albumScreenModel.album.title,
                             style: TextStyle(
-                              color: Colors.black,
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           TextSpan(
                             text: '\n${albumScreenModel.name}',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(fontSize: 12),
                           ),
                           TextSpan(
                             text: '\n@${albumScreenModel.username}',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(fontSize: 12),
                           ),
                         ]),
                       ),

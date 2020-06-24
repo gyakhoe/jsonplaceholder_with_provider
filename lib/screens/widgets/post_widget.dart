@@ -39,8 +39,7 @@ class PostWidget extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: postScreenModel.name,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.black),
+                        style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       TextSpan(
                         text: ' @${postScreenModel.username}',
