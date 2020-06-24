@@ -25,7 +25,6 @@ class UserDetailScreen extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.teal,
         padding: EdgeInsets.all(5),
         child: SingleChildScrollView(
           child: Column(
